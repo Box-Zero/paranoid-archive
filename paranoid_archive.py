@@ -1,6 +1,7 @@
 import zipfile
 import pyAesCrypt
 import os
+import sys
 
 class ParanoidArchive:
     def __init__(self, archive_name, real_file, fake_file, correct_password, buffer_size=64*1024):
@@ -38,7 +39,8 @@ class ParanoidArchive:
                 print("Fake file extracted.")
 
 if __name__ == "__main__":
-    print("Started")
+    
+
     archive = ParanoidArchive(
         archive_name="protected_data.zip",
         real_file="real_data.txt",
