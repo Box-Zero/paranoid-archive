@@ -1,1 +1,3 @@
-data/
+*.zip
+correct_file
+trap_file
